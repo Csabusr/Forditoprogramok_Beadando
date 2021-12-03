@@ -5,8 +5,38 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ofq8ae_forditoprogram_beadando"
         mc:Ignorable="d"
-        Title="OFQ8AE_Fordprog_Beadandó" Height="450" Width="800">
+        Title="OFQ8AE_Fordprog_Beadandó" Height="512" Width="1200">
     <Grid>
-        
+        <DataGrid x:Name="dg_tablazat" HorizontalAlignment="Left" Height="331" Margin="10,138,0,0" VerticalAlignment="Top" Width="887">
+            <DataGrid.Resources>
+                <Style TargetType="{x:Type DataGridColumnHeader}">
+                    <Setter Property="FontWeight" Value="Bold"/>
+                </Style>
+                <Style TargetType="{x:Type DataGridCell}">
+                    <Setter Property="BorderThickness" Value="1"/>
+                    <Setter Property="BorderBrush" Value="White"/>
+                    <Setter Property="Padding" Value="1 1 1 1"/>
+                </Style>
+            </DataGrid.Resources>
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Column1" Binding="{Binding column1}" Width="*" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Column2" Binding="{Binding column2}" Width="*" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Column3" Binding="{Binding column3}" Width="*" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Column4" Binding="{Binding column4}" Width="*" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Column5" Binding="{Binding column5}" Width="*" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Column6" Binding="{Binding column6}" Width="*" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Column7" Binding="{Binding column7}" Width="*" IsReadOnly="True"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <TextBox x:Name="tb_o_input" HorizontalAlignment="Left" Height="23" Margin="10,50,0,0" TextWrapping="Wrap" Text="1+1*1#" VerticalAlignment="Top" Width="887"/>
+        <TextBox x:Name="tb_c_input" HorizontalAlignment="Left" Height="23" Margin="10,80,0,0" TextWrapping="Wrap" Text="i+i*(1+1)#" VerticalAlignment="Top" Width="887"/>
+        <TextBox x:Name="tb_path" HorizontalAlignment="Left" Height="23" Margin="10,110,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="635"/>
+        <Label x:Name="lbl_correct" Content="Kérem az inputokat" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Button Content="Tallóz" HorizontalAlignment="Left" Margin="777,110,0,0" VerticalAlignment="Top" Width="120" Height="23" Click="Button_Click_1"/>
+        <Button Content="Beégetett" HorizontalAlignment="Left" Margin="650,110,0,0" VerticalAlignment="Top" Width="122" Height="23" Click="Button_Click"/>
+        <TextBox x:Name="tb_output" HorizontalAlignment="Left" Height="427" Margin="902,42,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="280"/>
+        <Button Content="Lépésrő lépésre történő megoldás" HorizontalAlignment="Left" Margin="902,11,0,0" VerticalAlignment="Top" Height="23" Width="280" Click="Button_Click_2"/>
+        <Label Content="A Syntax.csv fájlban a E' és T' Két karakteres mivoltjuk miatt cserélve lett É és G karakterekre" HorizontalAlignment="Left" Margin="370,11,0,0" VerticalAlignment="Top" Background="#FFFDFD07"/>
+
     </Grid>
 </Window>
