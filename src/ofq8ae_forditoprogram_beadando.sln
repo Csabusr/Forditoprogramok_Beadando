@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ofq8ae_forditoprogram_beadando", "ofq8ae_forditoprogram_beadando\ofq8ae_forditoprogram_beadando.csproj", "{F1913A5E-B83C-4E24-89AB-E7A2FC7CAD7E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F1913A5E-B83C-4E24-89AB-E7A2FC7CAD7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1913A5E-B83C-4E24-89AB-E7A2FC7CAD7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1913A5E-B83C-4E24-89AB-E7A2FC7CAD7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1913A5E-B83C-4E24-89AB-E7A2FC7CAD7E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {780E20A8-23E2-424D-834F-EFB6BADEA024}
+	EndGlobalSection
+EndGlobal
